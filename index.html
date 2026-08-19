@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Teaching — Bachir CHEHAB</title>
+<meta name="robots" content="noindex">
+<meta name="description" content="Bachir Chehab — Teaching.">
+<meta name="theme-color" content="#0A0A0B">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:#0A0A0B; --surface:#101012; --text:#FAFAFA; --text-soft:#D4D4D8;
+  --muted:#8A8A93; --muted-dim:#5A5A62; --line:#27272A; --line-strong:#3F3F46;
+  --accent:#D9F262; --accent-dim:#9CB239;
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+html, body {
+  background:var(--bg); color:var(--text);
+  font-family:'Geist', system-ui, sans-serif; line-height:1.6;
+  -webkit-font-smoothing:antialiased; min-height:100dvh;
+}
+body { display:flex; align-items:center; justify-content:center;
+  padding:56px 28px;
+  padding-top:calc(56px + env(safe-area-inset-top,0px));
+  padding-bottom:calc(56px + env(safe-area-inset-bottom,0px)); }
+.card { width:100%; max-width:600px; position:relative; }
+.corner { position:absolute; width:12px; height:12px; border:0 solid var(--line-strong); }
+.c-tl { top:-32px; left:-10px; border-width:1px 0 0 1px; }
+.c-tr { top:-32px; right:-10px; border-width:1px 1px 0 0; }
+.c-bl { bottom:-32px; left:-10px; border-width:0 0 1px 1px; }
+.c-br { bottom:-32px; right:-10px; border-width:0 1px 1px 0; }
+.h { font-family:'Geist Mono', monospace; font-size:13px; letter-spacing:0.14em;
+  text-transform:uppercase; color:var(--accent); display:flex; align-items:center;
+  gap:12px; margin-bottom:26px; }
+.h::before { content:''; width:30px; height:1px; background:var(--accent); }
+h1 { font-size:clamp(34px,7vw,52px); font-weight:600; letter-spacing:-0.03em;
+  line-height:1.05; margin-bottom:24px; }
+h1 .dot { color:var(--accent); }
+.stat { display:inline-flex; align-items:center; gap:9px; padding:7px 13px;
+  border:1px solid var(--line); background:var(--surface);
+  font-family:'Geist Mono', monospace; font-size:11.5px; letter-spacing:0.05em;
+  text-transform:uppercase; color:var(--accent-dim); margin-bottom:26px; }
+p { color:var(--text-soft); font-size:15.5px; margin-bottom:14px; }
+p.mut { color:var(--muted); font-size:13.5px; }
+.back { display:grid; grid-template-columns:48px 1fr; align-items:center; gap:18px;
+  margin-top:40px; padding:22px; border:1px solid var(--line); background:var(--surface);
+  text-decoration:none; color:var(--text); position:relative;
+  transition:padding 280ms cubic-bezier(0.16,1,0.3,1), border-color 280ms; }
+.back:hover, .back:focus-visible { padding-left:30px; border-color:var(--line-strong); outline:none; }
+.back::after { content:''; position:absolute; top:-1px; bottom:-1px; right:-1px; width:4px;
+  background:var(--accent); box-shadow:0 0 14px rgba(217,242,98,0.55);
+  transform:scaleY(0); transition:transform 260ms cubic-bezier(0.16,1,0.3,1); }
+.back:hover::after, .back:focus-visible::after { transform:scaleY(1); }
+.num { font-family:'Geist Mono', monospace; font-size:14px; color:var(--accent); }
+.bt { font-size:17px; font-weight:500; }
+.bs { font-family:'Geist Mono', monospace; font-size:12.5px; color:var(--muted); }
+.foot { margin-top:52px; padding-top:22px; border-top:1px solid var(--line);
+  font-family:'Geist Mono', monospace; font-size:11px; letter-spacing:0.08em;
+  text-transform:uppercase; color:var(--muted-dim); }
+@media (prefers-reduced-motion: reduce) { * { transition-duration:0.01ms !important; } }
+</style>
+</head>
+<body>
+<main class="card">
+  <div class="corner c-tl"></div><div class="corner c-tr"></div>
+  <div class="corner c-bl"></div><div class="corner c-br"></div>
+
+  <div class="h">[ Teach ]</div>
+  <h1>Teaching<span class="dot">.</span></h1>
+  <div class="stat">In preparation</div>
+  <p>Courses, guest lectures, and seminars — IT Management at the Ted Rogers School of Management, Toronto Metropolitan University, and beyond.</p>
+  <p class="mut">This page is being drafted. The address is live so it can be shared —
+  content follows shortly.</p>
+  <a class="back" href="https://chehab.ca">
+    <span class="num">/&larr;</span>
+    <span><span class="bt">Back to chehab.ca</span><br><span class="bs">main site</span></span>
+  </a>
+  <div class="foot">Bachir Chehab · teach.chehab.ca</div>
+</main>
+</body>
+</html>
