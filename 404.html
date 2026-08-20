@@ -9,10 +9,22 @@
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,400;0,500;1,500&family=Geist+Mono:wght@400&display=swap" rel="stylesheet">
 <style>
+/* Self-hosted variable Geist — no third-party requests */
+@font-face {
+  font-family: 'Geist';
+  src: url('/fonts/Geist-Variable.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Geist Mono';
+  src: url('/fonts/GeistMono-Variable.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
 :root {
   --bg:#0A0A0B; --surface:#101012; --text:#FAFAFA; --text-soft:#D4D4D8;
   --muted:#8A8A93; --muted-dim:#5A5A62; --line:#27272A; --line-strong:#3F3F46;
